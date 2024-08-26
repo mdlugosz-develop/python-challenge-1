@@ -204,7 +204,7 @@ for order in order_list:
 
 
     # 8. Calculate the number of spaces for formatted printing
-    num_item_spaces = 24 - len(item_name)
+    num_item_spaces = 25 - len(item_name)
 
 
     # 9. Create space strings
@@ -212,7 +212,7 @@ for order in order_list:
 
 
     # 10. Print the item name, price, and quantity
-    print(f"{item_name}{item_spaces} | ${price} | {quantity}")
+    print(f"{item_name}{item_spaces} | ${price}  | {quantity}")
 
 
 # 11. Calculate the cost of the order using list comprehension
