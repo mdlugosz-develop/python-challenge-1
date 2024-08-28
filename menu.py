@@ -64,12 +64,10 @@ place_order = True
 while place_order:
     # Ask the customer from which menu category they want to order
     print("From which menu would you like to order? ")
-
     # Create a variable for the menu item number
     i = 1
     # Create a dictionary to store the menu for later retrieval
     menu_items = {}
-
     # Print the options to choose from menu headings (all the first level
     # dictionary items in menu).
     for key in menu.keys():
@@ -204,15 +202,13 @@ for order in order_list:
 
 
     # 8. Calculate the number of spaces for formatted printing
-    num_item_spaces = 25 - len(item_name)
-
+    num_item_spaces = 26 - len(item_name)
 
     # 9. Create space strings
     item_spaces = " " * num_item_spaces
 
-
     # 10. Print the item name, price, and quantity
-    print(f"{item_name}{item_spaces} | ${price}  | {quantity}")
+    print(f"{item_name}{item_spaces}| ${price}  | {quantity}")
 
 
 # 11. Calculate the cost of the order using list comprehension
